@@ -1,0 +1,67 @@
+#formulario-cliente {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #formulario-cliente label {
+    margin-bottom: 5px;
+  }
+  
+  .container-principal > h1 {
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  
+  .campos-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campos-mitad {
+    width: 42%;
+    margin: 10px 10px;
+  }
+  
+  .campos-mitad-mitad {
+    width: 20%;
+    margin: 10px 10px;
+  }
+  
+  .campo-full {
+    width: 86%;
+  }
+  
+  input,
+  select {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .llevar-inicio {
+    margin-right: 67%;
+  }
+  
+  .buttons-cancel-register {
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .buttons-cancel-register > button {
+    font-size: 12px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .buttons-cancel-register > button:hover {
+    background-color: rgb(190, 154, 154);
+  }
+  
