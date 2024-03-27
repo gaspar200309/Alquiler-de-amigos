@@ -11,8 +11,9 @@ class UserManager(BaseUserManager):
             raise ValueError('Es necesario un email electrónico.')
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
-        if password:
-            user.set_password(password)
+
+        user.set_password(password)
+        
         user.save(using=self._db)
         return user
 
@@ -59,13 +60,15 @@ class User(AbstractBaseUser, PermissionsMixin):
             return '{}{}'.format(MEDIA_URL, self.image)
         return '{}{}'.format(STATIC_URL, 'img/empty.png')
     
-class Test():
-    def __str__(self):
-        pass
-
 class Friend(models.Model):
     id_user = models.ForeignKey(User, on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=5, decimal_places=2)
+
+    def __str__(self):
+        return str(self.id_user)
+    
+class Client(models.Model):
+    id_user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return str(self.id_user)
