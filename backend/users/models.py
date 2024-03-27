@@ -63,3 +63,9 @@ class Test():
     def __str__(self):
         pass
 
+class Friend(models.Model):
+    id_user = models.ForeignKey(User, on_delete=models.CASCADE)
+    price = models.DecimalField(max_digits=5, decimal_places=2)
+
+    def __str__(self):
+        return str(self.id_user)
