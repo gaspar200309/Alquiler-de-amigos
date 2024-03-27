@@ -64,4 +64,10 @@
   .buttons-cancel-register > button:hover {
     background-color: rgb(190, 154, 154);
   }
+
+span{
+  display: block;
+  color: tomato;
+  font-size: x-small;
+}
   

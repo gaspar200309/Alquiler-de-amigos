@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+
+}
+.boton {
+    background-color: #441313;
+    padding: 20px 30px 20px 30px;
+    margin: 20px 30px 20px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: aquamarine;
+}
+
+.boton:hover{
+    color: black;
+    background-color: #fff;
+    border: #441313; 
+       
+}

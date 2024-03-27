@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { CustomerFormPage } from "./pages/customerFormPage";
-import Home from "./pages/Home";
-import ListFriend from "./pages/ListFriend";
-import NavBarN from "./components/NavBarN";
+import { CustomerFormPage } from "./pages/forms/customerFormPage";
+import Home from "./pages/home/Home";
+import ListFriend from "./pages/listFriend/ListFriend";
+import NavBarN from "./components/navbar/NavBarN";
 
 function App() {
   return (
